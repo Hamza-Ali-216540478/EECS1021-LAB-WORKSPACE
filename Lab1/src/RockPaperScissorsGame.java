@@ -16,18 +16,18 @@ public class RockPaperScissorsGame {
 
 		int player1Score = 0, player2Score = 0;
 		
-		System.out.println("Enter the name of player 1:");
+		System.out.println(" enter the name of player 1:");
 		String player1 = input.nextLine();
-		System.out.println("Enter the name of player 2:");
+		System.out.println(" enter the name of player 2:");
 		String player2 = input.nextLine(); 
-//ROUND 1	 
+// this is the first round
 		System.out.println("============");
-		System.out.println("Round 1:");
+		System.out.println(" round 1:");
 		System.out.println("============");
 		
-		System.out.println("What does " + player1 + " play?: (R, P, or S)");
+		System.out.println(" what does " + player1 + " play?: (R, P, or S)");
 		String Player1Turn = input.nextLine();
-		System.out.println("What does " + player2 + " play?: (R, P, or S)");
+		System.out.println(" what does " + player2 + " play?: (R, P, or S)");
 		String Player2Turn = input.nextLine();
 		if (Player1Turn.equals("R") && Player2Turn.equals("S")) {
 			player1Score += 1;
@@ -42,14 +42,14 @@ public class RockPaperScissorsGame {
 		} else if  (Player2Turn.equals("S") && Player1Turn.equals("P")) {
 			player2Score += 1;
 		}
-//ROUND 2
+//this is the second round
         System.out.println("============");
-		System.out.println("Round 2:");
+		System.out.println(" round 2:");
 		System.out.println("============");
 		
-		System.out.println("What does " + player1 + " play?: (R, P, or S)");
+		System.out.println(" what does " + player1 + " play?: (R, P, or S)");
 		Player1Turn = input.nextLine();
-		System.out.println("What does " + player2 + " play?: (R, P, or S)");
+		System.out.println(" what does " + player2 + " play?: (R, P, or S)");
 		Player2Turn = input.nextLine();
 		if (Player1Turn.equals("R") && Player2Turn.equals("S")) {
 			player1Score += 1;
@@ -64,14 +64,14 @@ public class RockPaperScissorsGame {
 		} else if  (Player2Turn.equals("S") && Player1Turn.equals("P")) {
 			player2Score += 1;
 		}
-//ROUND 3		
+//this is the third round		
 		if (player1Score == player2Score) {
 			System.out.println("============");
-			System.out.println("Round 3:");
+			System.out.println(" round 3:");
 			System.out.println("============");
-			System.out.println("What does " + player1 + " play?: (R, P, or S)");
+			System.out.println(" what does " + player1 + " play?: (R, P, or S)");
 			Player1Turn = input.nextLine();
-			System.out.println("What does " + player2 + " play?: (R, P, or S)");
+			System.out.println(" what does " + player2 + " play?: (R, P, or S)");
 			Player2Turn = input.nextLine();
 			if (Player1Turn.equals("R") && Player2Turn.equals("S")) {
 				player1Score += 1;
@@ -88,12 +88,12 @@ public class RockPaperScissorsGame {
 			}
 		}
 		if (player1Score == player2Score) {
-				System.out.println("Game Over: a tie between " + player1 + " and " + player2 );}
+				System.out.println(" game Over: a tie between " + player1 + " and " + player2 );}
 		else if (player1Score > player2Score){
-			System.out.println("Game Over: " + player1 + " wins!");
+			System.out.println(" game Over: " + player1 + " wins!");
 		} 
 		else if (player2Score > player1Score){
-			System.out.println("Game Over: " + player2 + " wins!");}
+			System.out.println(" game Over: " + player2 + " wins!");}
 		
 		
 		

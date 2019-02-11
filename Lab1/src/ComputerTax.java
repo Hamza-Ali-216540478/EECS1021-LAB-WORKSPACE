@@ -71,7 +71,7 @@ public class ComputerTax {
 				}
 			}
 		else {
-			System.out.println("Illegal status: "+filingStatus);
+			System.out.println(" illegal status:"+filingStatus);
 		}
 		
 		input.close();
